@@ -1,0 +1,9 @@
+.hero {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: "public/halftone-yellow.png";
+    width: 100%;
+}
+
