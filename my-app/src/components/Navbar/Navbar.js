@@ -1,13 +1,18 @@
 import React from "react";
 import "./Navbar.css"
+import Col from "../Col";
+import Row from "../Row";
 
-const Navbar = props =>
+
+
+const Navbar = (props) =>
     <nav className= "navbar navbar-default">
         <div className="container-fluid">
-            <div className="navbar-header">
-                <h1> Clicky Game! </h1>
-            </div>
+        <div className="navbar-header">
+
+        
         </div>
-    </nav>
+        </div>
+    </nav>;
 
     export default Navbar;

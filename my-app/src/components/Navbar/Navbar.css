@@ -1,3 +1,10 @@
 .navbar.navbar-default {
     background-color: purple;
 }
+
+h3 {
+    color: white;
+    float: left;
+    clear: right;
+    text-overflow: none;
+}
