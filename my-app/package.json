@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rernst322.github.io/my-app",
+  "homepage": "https://rernst322.github.io/clickygame",
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.2",
