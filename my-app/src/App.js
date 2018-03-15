@@ -8,7 +8,9 @@ import React, { Component } from "react";
 // import Col from "./components/Col";
 import Row from "./components/Row";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 import characters from "./characters.json";
+import Container from "./components/Container";
 
 
 let correctGuess = 0;
@@ -77,17 +79,17 @@ setClicked = id => {
 render () {
     return (
         <Wrapper>
-            <Navbar /> 
-               
-          
-            
+            <Navbar>
+                <h1 className="title">The Anchorman Clicky Game!</h1>
+            </Navbar> 
                 <Hero> 
                     <h1>The Clicky Game!</h1>
                     <h3>Correct Guesses : {this.state.correctGuess}</h3>
                     <h3>Top Score : {this.state.topScore}</h3>
                 </Hero>
-                <Row>
-                    {this.state.characters.map(character => (
+                <Container>
+                {/* <Row> */}
+                    <div className="boardGame" style={{ margin: "20px;", width: "700px", height: "700px"}}>                     {this.state.characters.map(character => (
                         <Card
                         setClicked ={this.setClicked}
                         id={character.id}
@@ -95,10 +97,16 @@ render () {
                         image={character.image}
                         />
                     ))}
-                </Row>
+                    </div>
+                {/* </Row> */}
+                </Container>
+                <Footer />
+                
             </Wrapper>
-                );
-            }
-        };  
+            
+        );
+    }
+};  
 
 export default App;
+
